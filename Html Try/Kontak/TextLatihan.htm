@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+    <head> <!--berisi informasi yang tdak terlihat-->
+        <title> Page </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+    
+        <div>
+            <a href="../konten/latihanAwal.htm">Home</a> <!-- ../ = folder sebelumnya -->
+            <a href="Kontak/TextLatihan.htm">kontak</a>
+        </div>
+        <div>
+            <p><h1>Ini contoh koding saya!</h1></p>
+            <p> 	&nbsp; 	&nbsp;Disini merupakan konten <b> kontak </b></p>
+        </div>
+                    <!--form-->
+        <form>
+                <!--fieldset gunanya untuk mengelompokan-->
+            <FIeldset>
+                <legend><b>Nama dan Pesan</b></legend>
+                        <!--Text input-->
+                <label for="Nama_User">Nama</label>
+                <br>
+                <input type="text" placeholder="Nama User" value="Nama User" id="Nama_User">
+                <br><br>
+                <label for="Pesan_User">Pesan</label>
+                <br>
+                <textarea cols="100" rows="7" id="Pesan_User">Pesan anda...</textarea>
+                <br>
+            </FIeldset>
+
+            <fieldset>
+                <legend><b>Pilihan Data</b></legend>
+                        <!--input checkbox-->
+                <label>Hobi</label>
+                <br>
+                <input type="checkbox" name="Hobi_User" value="0">Bermain gitar 
+                <input type="checkbox" name="Hobi_User" value="1" checked>Bernyayi 
+                <input type="checkbox" name="Hobi_User" value="2">Ngoding 
+                <input type="checkbox" name="Hobi_User" value="3">Lainnya 
+                            <!--input radio-->
+                <br>
+                <label>Jenis Kelamin</label><br>
+                <input type="radio" name="Gender_User" value="0" checked>Laki-Laki
+                <input type="radio" name="Gender_User" value="1">Perempuan <br>
+                
+                            <!--Select Option-->
+                <label>Mata Pelajaran</label>
+                <select>
+
+                    <optgroup label="FrontEnd">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                    </optgroup>
+
+                    <optgroup label="BackEnd"> <!--untuk mempermudah-->
+                        <option value="PYTHON">PYTHON</option>
+                        <option value="PHP">PHP</option>
+                        <option value="DB">DATABASE</option>
+                    </optgroup>
+
+                </select>
+            </fieldset><br>
+            <input type="submit" value="Kirim Data"><!--value didalam berfungsi: mengganti text submitnya-->
+        </form>
+        <br><br>
+
+                    <!--Bagian table-->
+       <!--<caption> <b></b></caption>-->
+        <table border="2">
+            <tr>
+                <th colspan="3">Daftar Anak SMA</th>
+            </tr>
+            <tr>
+                <th rowspan="3">SMA</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+              
+            </tr>
+            
+            <tr>
+                    
+                    <td>Ganes</td>
+                    <td>11 mipa 8</td>
+            </tr>
+            
+            <tr>
+               
+                <td>Hilman</td>
+                <td>12 ips 2</td>
+                
+            </tr>
+        </table>
+                <!-- list tanpa pengurutan -->
+        <ul> 
+            <li>EkaJaya</li>
+            <li>Ganes</li>
+            <li>Diva</li>
+        </ul>
+                <!--list pengurutan-->
+        <ol>
+            <li>Biografi Ganes</li>
+            <li>Biografi EkaJaya</li>
+            <li>Biografi Diva</li>
+        </ol>
+                <!--list deskripsi-->
+        <dl>
+            <dt>Ganes</dt>
+            <dd>Dia adalah pembuat dari website ini!</dd> <!--isinya-->
+
+            <dt>EkaJaya</dt>
+            <dd>Dia yang telah membuat display untuk sebuah web</dd>
+
+            <dt><b>Diva</b></dt>
+            <dd>ketua yang tidak berjasa</dd>
+        </dl>
+                    <!--entity copy right-->
+        <p>&copy;Ganes koding</p>
+        
+    </body>
+</html>
